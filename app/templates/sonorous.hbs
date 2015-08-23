@@ -12,3 +12,11 @@
         </li>
     </ul>
 </section>
+
+<ul>
+  {{#each song in model}}
+    <li>{{song.artist_id}}</li>
+    <li>{{song.artist_name}}</li>
+    <li>{{song.title}}</li>
+  {{/each}}
+</ul>
