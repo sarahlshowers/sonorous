@@ -2,11 +2,10 @@ import DS from 'ember-data';
 
 export default DS.RESTAdapter.extend({
   host: 'http://developer.echonest.com',
-  namespace: 'api/v4',
+  namespace: 'api/v4/genre',
   query: function(store, type, queryParams) {
     var url = this.buildURL(type.typeKey);
-    var singularURL = url.substring(0, url.length-1);
     queryParams.api_key = 'RIDOQTZNDLWH4BHYH';
-    return this.ajax([singularURL, 'search'].join('/'), 'GET', {data: queryParams})
+    return this.ajax(url, 'GET', {data: queryParams})
   },
 });
