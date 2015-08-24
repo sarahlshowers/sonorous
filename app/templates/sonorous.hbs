@@ -4,26 +4,13 @@
     <ul id="genre-list">
         <li>
             <input type="checkbox" class="toggle">
-            <label>country</label>
-        </li>
-        <li>
-            <input type="checkbox" class="toggle">
-            <label>dance</label>
+            <label>jazz</label>
         </li>
     </ul>
 </section>
 
-{{!-- <ul>
-  {{#each song in model}}
-    <li>{{song.artist_id}}</li>
-    <li>{{song.artist_name}}</li>
-    <li>{{song.title}}</li>
-  {{/each}}
-</ul> --}}
-
 <ul>
-  {{#each genre in model}}
-    <li>{{genre.artist_id}}</li>
-
+  {{#each artist in model}}
+    <li>{{artist.name}}</li>
   {{/each}}
 </ul>
