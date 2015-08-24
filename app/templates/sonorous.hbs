@@ -3,14 +3,34 @@
 <section id="main">
     <ul id="genre-list">
         <li>
-            <input type="checkbox" class="toggle">
-            <label>jazz</label>
+            {{#link-to 'jazz'}}
+              <p>jazz</p>
+            {{/link-to}}
+        </li>
+        <li>
+            {{#link-to 'rock'}}
+              <p>rock</p>
+            {{/link-to}}
+        </li>
+        <li>
+            {{#link-to 'pop'}}
+              <p>pop</p>
+            {{/link-to}}
+        </li>
+        <li>
+            {{#link-to 'folk'}}
+              <p>folk</p>
+            {{/link-to}}
+        </li>
+        <li>
+            {{#link-to 'latin'}}
+              <p>latin</p>
+            {{/link-to}}
+        </li>
+        <li>
+            {{#link-to 'country'}}
+              <p>country</p>
+            {{/link-to}}
         </li>
     </ul>
 </section>
-
-<ul>
-  {{#each artist in model}}
-    <li>{{artist.name}}</li>
-  {{/each}}
-</ul>

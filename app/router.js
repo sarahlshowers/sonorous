@@ -6,7 +6,13 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('sonorous');
+  this.resource('sonorous');
+  this.route('jazz');
+  this.route('rock');
+  this.route('country');
+  this.route('pop');
+  this.route('folk');
+  this.route('latin');
 });
 
 export default Router;
