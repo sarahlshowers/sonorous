@@ -1,0 +1,40 @@
+/************************
+GENRE PAGE
+*************************/
+
+.section-container {
+  background: #222222;
+  display: inline-block;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.column {
+  display: block;
+  float: left;
+  width: 50%;
+  .tile {
+    margin-bottom: 40px;
+    display: block;
+    &.country{
+      padding-top: 22px;
+    }
+  }
+  img {
+    left: 50%;
+    position: relative;
+    margin-left: -35px;
+  }
+  p {
+    color: #FFF;
+    font-size: 24px;
+    line-height: 1.33333;
+    font-weight: 200;
+    letter-spacing: normal;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    text-align: center;
+  }
+}
+
+
