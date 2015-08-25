@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('pop');
   this.route('folk');
   this.route('latin');
+  this.route('genre');
 });
 
 export default Router;
