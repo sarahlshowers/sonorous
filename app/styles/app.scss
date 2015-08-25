@@ -117,10 +117,11 @@ HOME PAGE SEARCH
 GENRE PAGE
 *************************/
 
-.genre-list {
+.section-container {
   background: #222222;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
+  width: 100%;
+  padding-top: 40px;
 }
 
 .column {
@@ -130,6 +131,9 @@ GENRE PAGE
   .tile {
     margin-bottom: 40px;
     display: block;
+    &.country{
+      padding-top: 22px;
+    }
   }
   img {
     left: 50%;
