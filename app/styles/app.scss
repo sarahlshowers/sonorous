@@ -1,14 +1,17 @@
 @import 'normalize';
 
 /************************
-LAYOUT
+COMPONENTS
 *************************/
 
 body {
 	background: #000;
 }
 
-
+a {
+  text-decoration: none;
+  color: #FFF;
+}
 
 /************************
 TYPOGRAPHY
@@ -44,6 +47,9 @@ ELEMENTS
 	cursor: pointer;
 	text-align: center;
 	border: 0;
+  &:hover {
+    background: linear-gradient(#4ab4e8, #1491d0);
+  }
 }
 
 .form-dropdown {
@@ -103,4 +109,14 @@ HOME PAGE SEARCH
     margin-left: -140px;
     width: 280px;
 	}
+}
+
+
+
+/************************
+GENRE PAGE
+*************************/
+
+.genre-list {
+  background: #222222;
 }
