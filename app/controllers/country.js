@@ -8,10 +8,8 @@ export default Ember.Controller.extend({
     var artists = this.get('model');
 
     if (artistState) {
-      console.log('hello', artists);
       return artists.filterBy('artist_location.region', artistState);
     } else {
-      console.log('world', artists);
       return artists;
     }
   }.property('stateValue')
