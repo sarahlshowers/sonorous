@@ -6,7 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('sonorous');
+  this.resource('sonorous', {path: '/'});
   this.route('jazz');
   this.route('rock');
   this.route('country');
