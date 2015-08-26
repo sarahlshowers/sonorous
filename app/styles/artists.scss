@@ -7,7 +7,12 @@ ARTISITS
     width: 360px;
     position: relative;
     left: 50%;
-    margin-left: -200px;
+    margin: 50px 0 0 -200px;
+    li {
+      position: relative;
+      left: 50%;
+      margin-left: -140px;
+    }
   }
   p {
     color: #999999;
@@ -18,15 +23,22 @@ ARTISITS
     display: inline;
   }
   a {
-    float: right;
-    margin-right: 11%;
-    color: #5cc3f6;
-    .learn-more {
+    p {
+      text-align: center;
+    }
+    .blue-link {
+      color: #5cc3f6;
       &:hover {
         text-decoration: underline;
       }
     }
   }
+}
+.large-icon {
+  position: relative;
+  left: 50%;
+  margin-left: -90px;
+  height: 100px;
 }
 
 

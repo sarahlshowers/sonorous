@@ -5,6 +5,7 @@ export default Ember.Route.extend({
     return this.store.find('artist', {
       name: 'country',
       bucket: 'artist_location',
+      bucket: 'urls'
     })
   }
 });
