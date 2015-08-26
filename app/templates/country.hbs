@@ -1,9 +1,14 @@
 {{outlet}}
 
 <section class="section-container artists">
+<img class="large-icon" src="/img/music-tiles/country-grey.svg" alt="">
   <ul>
     {{#each artist in model}}
-    <li><p>{{artist.name}} </p><a href=""><span class="learn-more">Learn more</span> 〉</a></li>
+    <li>
+      <a class="learn-more" href="{{artist.urls.mb_url}}">
+        <p><span class="blue-link">Learn more about: </span>{{artist.name}}</p>
+      </a>
+    </li>
     {{/each}}
   </ul>
 </section>
