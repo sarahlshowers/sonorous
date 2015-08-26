@@ -1,8 +1,9 @@
 {{outlet}}
 
-<ul>
-  {{#each artist in model}}
-    <li>{{artist.name}}</li>
-    <li>{{artist.artist_location.state}}</li>
-  {{/each}}
-</ul>
+<section class="section-container artists">
+  <ul>
+    {{#each artist in model}}
+    <li><p>{{artist.name}} </p><a href=""><span class="learn-more">Learn more</span> 〉</a></li>
+    {{/each}}
+  </ul>
+</section>

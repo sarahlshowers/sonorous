@@ -1,0 +1,32 @@
+/************************
+ARTISITS
+*************************/
+
+.artists {
+  ul {
+    width: 360px;
+    position: relative;
+    left: 50%;
+    margin-left: -200px;
+  }
+  p {
+    color: #999999;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 400;
+    letter-spacing: normal;
+    display: inline;
+  }
+  a {
+    float: right;
+    margin-right: 11%;
+    color: #5cc3f6;
+    .learn-more {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
