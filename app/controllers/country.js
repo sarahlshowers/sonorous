@@ -3,14 +3,17 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   application: Ember.inject.controller(),
   stateValue: Ember.computed.alias('application.stateValue'),
+  stateText: Ember.computed.alias('application.stateText'),
+
   filteredArtists: function() {
-    var artistState = this.get('stateValue');
+    var stateShort = this.get('stateValue');
+    var stateLong = this.get('stateText');
     var artists = this.get('model');
 
-    if (artistState) {
-      return artists.filterBy('artist_location.region', artistState);
-    } else {
-      return artists;
-    }
-  }.property('stateValue')
+    return artists.filter(function(artist) {
+      return artist.get('artist_location.region') === stateLong ||
+        artist.get('artist_location.region') === stateShort;
+    });
+
+  }.property('stateValue', 'stateText')
 });

@@ -6,7 +6,9 @@ export default Ember.Component.extend({
 		getState: function() {
       var selectEl = document.getElementById('select-state');
       var stateValue = selectEl.options[selectEl.selectedIndex].value;
-      this.sendAction('action', stateValue);
+      var stateText = selectEl.options[selectEl.selectedIndex].text;
+
+      this.sendAction('action', stateValue, stateText);
     }
 	}
 });
