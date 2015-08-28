@@ -9,7 +9,7 @@ First, I want to talk about the API. I think the biggest headache and largest us
 
 One of the other issues with the API, that I sadly discovered when I was too invested and time not would allow for me to start over. Each query to the API, only allowed for 20 results based on my query parameters. What this means for my app, is that there may be pages with nothing returned I suggest using New York as a state to get a bunch of good returns across multiple genres. States, leads me onto my next speed bump. You may have guessed by now that I needed to get the artist's state but, some records gave me the abbreviated state, some the full state. With my data sample already being small, I wanted to leverage everything I had and not lose extra records because of how the region data was returned to me. I got tripped up with implementing filterBy with multiple arguments
 
-If I had more time: I would like to search a larger set of genres and find a way to get more results (probably leverage a different API because 20 hits for each query is not really ideal).
+If I had more time: I would like to search a larger set of genres and find a way to get more results (probably leverage a different API because 20 hits for each query is not really ideal). I also want to add some kind of prompt in the event that no results are returned.
 
 Workflow: I chose to use branches to help organize myself. I created a Trello board and tried to focus on small slices of the app at a time.
 

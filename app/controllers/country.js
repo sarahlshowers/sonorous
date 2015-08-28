@@ -15,5 +15,8 @@ export default Ember.Controller.extend({
         artist.get('artist_location.region') === stateShort;
     });
 
+    if (artists.filter.length === 0) {
+      $('hide-no-results').css('display:block');
+    }
   }.property('stateValue', 'stateText')
 });

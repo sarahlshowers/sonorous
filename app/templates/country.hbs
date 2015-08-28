@@ -1,7 +1,10 @@
 {{outlet}}
 
 <section class="section-container artists">
-<img class="large-icon" src="/img/music-tiles/country-grey.svg" alt="">
+<img class="large-icon" src="/img/music-tiles/country-grey.svg" aria-hidden="true">
+  <div class="no-results">
+    <p>Sorry, your search returned no results.</p>
+  </div>
   <ul>
     {{#each artist in filteredArtists}}
     <li>
